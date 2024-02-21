@@ -16,6 +16,8 @@ spec:
     repoURL: https://github.com/amossg/argo.git  # Can point to either a Helm chart repo or a git repo.
     targetRevision: main  # For Helm, this refers to the chart version.
     path: app1  # This has no meaning for Helm charts pulled directly from a Helm repo instead of git.
+    plugin:
+      name: argocd-vault-plugin
 
   # Destination cluster and namespace to deploy the application
   destination:
